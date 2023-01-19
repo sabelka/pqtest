@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.24)
+project(pqtest)
+set(CMAKE_EXE_LINKER_FLAGS "-static")
+find_package(PostgreSQL REQUIRED)
+add_executable(pqtest pqtest.cpp)
+target_link_libraries(pqtest PRIVATE PostgreSQL::PostgreSQL)

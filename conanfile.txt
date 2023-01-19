@@ -1,0 +1,12 @@
+[build_requires]
+
+[requires]
+libpq/14.5
+
+[options]
+libpq:shared=False
+
+[generators]
+virtualenv
+CMakeDeps
+CMakeToolchain
